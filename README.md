@@ -9,6 +9,7 @@ Legends:
 
 Inspo from:
 https://github.com/benny-e/waybar-config
+
 some style-sheets and template taken from:
 https://github.com/elifouts/Dotfiles
 
