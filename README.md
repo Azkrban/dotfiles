@@ -17,3 +17,7 @@ https://github.com/elifouts/Dotfiles
 
 default config just changed colors 
 
+3) fastfetch config
+
+just the default config with just sections removed.
+
