@@ -1,4 +1,4 @@
-# .Config
+# dotfiles
 My configs for my favourite distros Arch and cachyos. I prefer a minimalist approach for simplicity ;)
 
 CURRENT CONTENTS: 
