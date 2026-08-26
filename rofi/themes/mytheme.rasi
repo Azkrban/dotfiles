@@ -1,0 +1,51 @@
+* {
+    background-color: #0d0d0d;
+    text-color: #ffffff;
+    border-color: #767676;
+}
+
+window {
+    background-color: #0d0d0d;
+    border: 2px;
+    border-color: #767676;
+    border-radius: 8px;
+}
+
+mainbox {
+    background-color: #0d0d0d;
+}
+
+inputbar {
+    background-color: #0d0d0d;
+    text-color: #ffffff;
+    border: 2px;
+    border-color: #767676;
+    padding: 10px;
+}
+
+listview {
+    background-color: #0d0d0d;
+    border: 0px;
+}
+
+element {
+    background-color: #0d0d0d;
+    text-color: #ffffff;
+    border: 0px;
+}
+
+element-icon {
+    size: 32px;
+}
+
+element-text {
+    font: "JetBrainsMono Nerd Font 14";
+    vertical-align: 0.5;
+}
+
+element selected {
+    background-color: #767676;
+    text-color: #000000;
+    border: 2px;
+    border-color: #ffffff;
+}
