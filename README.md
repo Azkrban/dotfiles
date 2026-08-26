@@ -6,6 +6,7 @@ CURRENT CONTENTS:
 1) Waybar configuration:
 
 Legends:
+
 Inspo from:
 https://github.com/benny-e/waybar-config
 
