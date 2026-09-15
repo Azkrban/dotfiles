@@ -1,0 +1,131 @@
+{
+        "layer": "top",
+        "position": "top",
+        "reload_style_on_change": true,
+        "modules-left": ["custom/distro","hyprland/workspaces","custom/launch-firefox",
+        "custom/launch-term","custom/fileman","custom/launch-vscodium","mpris"],
+        "modules-center": [],
+        "modules-right": ["wlr/taskbar","pulseaudio","bluetooth","network","clock"],
+
+
+        "hyprland/workspaces": {
+    "format": "{name}",
+    "persistent-workspaces": {
+        "*": [ 1,2,3,4,5 ]
+    }
+},
+        "clock": {
+            "format": "󰸗 {:%a, %b %d - %I:%M %p}",
+            "interval": 1,   
+            "tooltip-format": "<tt>{calendar}</tt>",
+            "calendar": {
+                "format": {
+                    "today": "<span color='#fAfBfC'><b>{}</b></span>"
+                }
+            },
+            "actions": {
+                "on-click-right": "shift_down",
+                "on-click": "shift_up"
+            }
+        },
+        "network": {
+            "format-wifi": "",
+            "format-ethernet":" ",
+            "format-disconnected": "",
+            "tooltip-format-disconnected": "Error",
+            "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+            "tooltip-format-ethernet": "{ifname} 🖧",
+            "on-click": "kitty nmtui"
+        },
+        "bluetooth": {
+            "format-on": "󰂯",
+            "format-off": "BT-off",
+            "format-disabled": "󰂲",
+            "format-connected-battery": "{device_battery_percentage}% 󰂯",
+            "format-alt": "{device_alias} 󰂯",
+            "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+            "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+            "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
+            "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
+            "on-click-right": "blueman-manager"
+        },
+
+"custom/distro": {
+    "format": "",
+    "tooltip-format":" App Launcher",
+    "on-click": "rofi -show drun",
+    "tooltip": true
+},
+
+"pulseaudio": {
+    "format": "{volume}%",
+    "format-muted": "󰝟",
+    "format-icons": {
+        "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "scroll-step": 5,
+    "on-click": "pamixer -t",
+    "on-click-right": "pavucontrol"
+},
+
+"mpris": {
+    "format": "{dynamic}",
+    "format-paused": "<i>{dynamic}</i>",
+    "player-icons": {
+    },
+    "status-icons": {
+
+    },
+    "max-length": 30,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next"
+},
+
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "icon-theme": "Papirus-dark",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [],
+    "app_ids-mapping": {
+        "firefoxdeveloperedition": "firefox"
+    }
+},
+
+"tray": {
+    "icon-size": 18,
+    "spacing": 8
+},
+
+"custom/launch-term": {
+    "format": " ",
+    "tooltip-format": "Terminal",
+    "on-click": "kitty",
+    "tooltip": true
+},
+
+"custom/launch-firefox": {
+    "format": "󰈹 ",
+    "tooltip-format": "Firefox",
+    "on-click": "firefox",
+    "tooltip": true
+},
+
+"custom/launch-vscodium": {
+    "format": "󰨞 ",
+    "tooltip-format": "VSCodium",
+    "on-click": "vscodium",
+    "tooltip": true
+},
+
+  "custom/fileman": {
+    "format": " ",
+    "tooltip-format":"Files",
+    "on-click": "thunar",
+    "tooltip": true
+  }
+
+}, 
+
